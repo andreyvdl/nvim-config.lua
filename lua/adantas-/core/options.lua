@@ -1,17 +1,15 @@
-local options = { noremap = true,
-    silent = true
-}
+vim.opt.clipboard = "unnamedplus"
+vim.opt.completeopt = {"menu", "menuone", "noselect"}
+vim.opt.mouse = "a"
 
-vim.keymap.set("n", "j", "h", options)
-vim.keymap.set("n", "i", "k", options)
-vim.keymap.set("n", "k", "j", options)
-vim.keymap.set("n", "l", "l", options)
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = false
 
-vim.keymap.set("n", "<M-a>", "<C-w>h", options)
-vim.keymap.set("n", "<M-w>", "<C-w>k", options)
-vim.keymap.set("n", "<M-s>", "<C-w>j", options)
-vim.keymap.set("n", "<M-d>", "<C-w>l", options)
+vim.opt.number = true
+vim.opt.cursorline = true
 
-vim.keymap.set("n", "<C-q>", ":q!<CR>", options)
-vim.keymap.set("n", "<C-s>", ":w<CR>", options)
-vim.keymap.set("n", "<C-x>", ":x<CR>", options)
+vim.opt.incsearch = true
+vim.opt.hlsearch = true
+vim.opt.smartcase = true
