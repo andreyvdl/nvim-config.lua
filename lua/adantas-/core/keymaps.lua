@@ -2,16 +2,19 @@ local options = { noremap = true,
     silent = true
 }
 
-vim.keymap.set("n", "j", "h", options)
-vim.keymap.set("n", "i", "k", options)
-vim.keymap.set("n", "k", "j", options)
-vim.keymap.set("n", "l", "l", options)
+local vkeymap = vim.keymap
 
-vim.keymap.set("n", "<M-a>", "<C-w>h", options)
-vim.keymap.set("n", "<M-w>", "<C-w>k", options)
-vim.keymap.set("n", "<M-s>", "<C-w>j", options)
-vim.keymap.set("n", "<M-d>", "<C-w>l", options)
+vkeymap.set("n", "a", "i", options)
+vkeymap.set({"n", "v"}, "j", "h", options)
+vkeymap.set({"n", "v"}, "i", "k", options)
+vkeymap.set({"n", "v"}, "k", "j", options)
+vkeymap.set({"n", "v"}, "l", "l", options)
 
-vim.keymap.set("n", "<C-q>", ":q!<CR>", options)
-vim.keymap.set("n", "<C-s>", ":w<CR>", options)
-vim.keymap.set("n", "<C-x>", ":x<CR>", options)
+vkeymap.set("n", "<M-j>", "<C-w>h", options)
+vkeymap.set("n", "<M-i>", "<C-w>k", options)
+vkeymap.set("n", "<M-k>", "<C-w>j", options)
+vkeymap.set("n", "<M-l>", "<C-w>l", options)
+
+vkeymap.set("n", "<C-q>", ":q!<CR>", options)
+vkeymap.set("n", "<C-s>", ":w<CR>", options)
+vkeymap.set("n", "<C-x>", ":x<CR>", options)
