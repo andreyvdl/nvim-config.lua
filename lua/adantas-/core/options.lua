@@ -11,7 +11,7 @@ options.expandtab = false
 
 options.colorcolumn = "80"
 options.scrolloff = 3
-options.signcolumn = "number"
+options.signcolumn = "yes"
 options.number = true
 options.cursorline = true
 
