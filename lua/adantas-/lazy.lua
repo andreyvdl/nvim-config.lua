@@ -12,3 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("adantas-.plugins")
+--[[
+--plugs to install
+--mason.nvim?
+--]]
