@@ -4,9 +4,9 @@ options.clipboard = "unnamedplus"
 options.completeopt = {"menu", "menuone", "noselect"}
 options.mouse = "a"
 
-options.tabstop = 4
-options.softtabstop = 4
-options.shiftwidth = 4
+options.tabstop = 8
+options.softtabstop = 8
+options.shiftwidth = 8
 options.expandtab = false
 
 options.colorcolumn = "80"
