@@ -3,6 +3,7 @@ return {
 	dependencies = {
 		"windwp/nvim-ts-autotag",
 	},
+	event = "BufEnter",
 	config = function()
 		require("nvim-treesitter.configs").setup(
 			{
@@ -11,20 +12,6 @@ return {
 				},
 				autotag = {
 					enable = true,
-				},
-				ensure_installed = {
-					"markdown",
-					"c",
-					"cpp",
-					"json",
-					"lua",
-					"bash",
-					"python",
-					"java",
-					"html",
-					"css",
-					"javascript",
-					"typescript",
 				},
 				auto_install = true,
 				highlight = {

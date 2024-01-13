@@ -1,5 +1,6 @@
 return {
 	"numToStr/Comment.nvim",
+	event = "BufEnter",
 	config = function()
 		local opts = {noremap = false, silent = true}
 		
