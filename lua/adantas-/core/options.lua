@@ -10,7 +10,7 @@ options.shiftwidth = 4
 options.expandtab = false
 
 options.colorcolumn = "80"
-options.scrolloff = 3
+options.scrolloff = 7
 options.signcolumn = "yes"
 options.number = true
 options.cursorline = true
