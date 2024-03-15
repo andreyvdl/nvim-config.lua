@@ -1,29 +1,32 @@
-local options = vim.opt
+local o = vim.opt
 
-options.clipboard = "unnamedplus"
-options.completeopt = {"menu", "menuone", "noselect"}
-options.mouse = "a"
+o.clipboard = "unnamedplus"
+o.completeopt = {"menu", "menuone", "noselect"}
+o.mouse = "a"
 
-options.tabstop = 4
-options.softtabstop = 4
-options.shiftwidth = 4
-options.expandtab = false
+o.tabstop = 2
+o.softtabstop = 2
+o.shiftwidth = 2
+o.expandtab = true
 
-options.colorcolumn = "80"
-options.scrolloff = 7
-options.signcolumn = "yes"
-options.number = true
-options.cursorline = true
+o.colorcolumn = "80"
+o.scrolloff = 7
+o.signcolumn = "yes"
+o.relativenumber = true
+o.cursorline = true
 
-options.incsearch = true
-options.hlsearch = true
-options.smartcase = true
+o.incsearch = true
+o.hlsearch = true
+o.smartcase = true
 
-options.encoding = "utf8"
-options.fileencoding = "utf8"
+o.encoding = "utf8"
+o.fileencoding = "utf8"
 
-options.syntax = "ON"
-options.termguicolors = true
+o.syntax = "ON"
+o.termguicolors = true
 
-options.splitright = true
-options.splitbelow = true
+o.splitright = true
+o.splitbelow = true
+
+o.wrap = false
+o.listchars = {tab="=>", trail="~", nbsp="^"}

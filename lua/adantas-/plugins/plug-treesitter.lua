@@ -24,7 +24,7 @@ return {
 		local keymap = vim.keymap
 		local opts = {noremap = true, silent = true}
 
-		keymap.set("n", "<leader>pss", ":TSUpdateSync<CR>", opts)
+		keymap.set("n", "<leader><leader>pss", ":TSUpdateSync<CR>", opts)
 		vim.cmd("TSToggle highlight")
 	end,
 }

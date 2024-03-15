@@ -8,6 +8,6 @@ return {
 		local keymap = vim.keymap
 		local opts = {noremap = true, silent = true}
 
-		keymap.set("n", "<leader>help", ":Cheatsheet<CR>", opts)
+		keymap.set("n", "<leader><leader>help", ":Cheatsheet<CR>", opts)
 	end,
 }

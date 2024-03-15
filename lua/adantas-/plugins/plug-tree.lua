@@ -31,7 +31,7 @@ return {
 		local keymap = vim.keymap
 		local opts = {noremap = true, silent = true}
 
-		keymap.set("n", "<leader>ft", ":NvimTreeToggle<CR>", opts)
-		keymap.set("n", "<leader>fr", ":NvimTreeRefresh<CR>", opts)
+		keymap.set("n", "<leader><leader>ft", ":NvimTreeToggle<CR>", opts)
+		keymap.set("n", "<leader><leader>fr", ":NvimTreeRefresh<CR>", opts)
 	end,
 }

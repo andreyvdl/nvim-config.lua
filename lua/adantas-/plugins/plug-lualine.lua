@@ -1,7 +1,7 @@
 return {
 	"nvim-lualine/lualine.nvim",
 	config = function()
-		local theme = require("lualine.themes.sonokai")
+		local theme = require("lualine.themes.gruvbox")
 		theme.normal.c.bg = nil
 
 		require("lualine").setup(

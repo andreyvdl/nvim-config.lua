@@ -16,3 +16,4 @@ require("lazy").setup("adantas-.plugins")
 --plugs to install
 --mason.nvim?
 --]]
+

@@ -9,7 +9,7 @@ return {
 		local keymap = vim.keymap
 		local builtin = require("telescope.builtin")
 
-		keymap.set("n", "<leader>ff", builtin.find_files, opts)
-		keymap.set("n", "<leader>fb", builtin.buffers, opts)
+		keymap.set("n", "<leader><leader>ff", builtin.find_files, opts)
+		keymap.set("n", "<leader><leader>fb", builtin.buffers, opts)
 	end,
 }
