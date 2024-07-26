@@ -1,4 +1,5 @@
-local options = { noremap = true,
+local options = {
+    noremap = true,
     silent = true
 }
 
