@@ -6,7 +6,7 @@ return {
 		local keymap = vim.keymap
 
     require("toggleterm").setup({
-      shell = "fish"
+      shell = "bash"
     })
 
 		keymap.set("n", "<leader><leader><CR>",
