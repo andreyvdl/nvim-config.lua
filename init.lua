@@ -17,29 +17,14 @@ vim.cmd("W<CR><ESC>")
 
 function ChColor()
   local colors = {
-    "base16-outrun-dark",
     "base16-tube",
     "onedark_dark",
-    "base16-atelier-seaside",
     "base16-oceanicnext",
     "base16-seti",
-    "base16-eighties",
-    "base16-atlas",
-    "base16-solarized-dark",
-    "base16-materia",
-    "base16-espresso",
     "base16-bright",
-    "base16-atelier-dune",
-    "base16-3024",
     "base16-brewer",
     "base16-material-vivid",
-    "base16-darktooth",
-    "base16-material-darker",
-    "base16-bespin",
-    "base16-solarflare",
-    "base16-google-dark",
     "base16-spacemacs",
-    "base16-flat"
   }
 
   math.randomseed(os.clock() * 10 ^ 6)
@@ -69,3 +54,23 @@ local o = {noremap = true, silent = true}
 ChColor()
 k.nvim_set_keymap("n", "<leader><leader>tc", ":lua ChColor()<CR>", o)
 k.nvim_set_keymap("n", "<leader><leader>mp", ":MarkdownPreviewToggle<CR>", o)
+
+
+-- docker-compose config
+vim.api.nvim_create_autocmd("FileType", {
+ pattern = "yaml",
+ callback = function()
+    if vim.fn.bufname("%") == "docker-compose.yml" then
+      vim.opt.filetype = "yaml.docker-compose"
+    elseif vim.fn.bufname("%") == "compose.yml" then
+      vim.opt.filetype = "yaml.docker-compose"
+    end
+ end
+})
+
+vim.g.coc_filetype_map = {
+ ["yaml.docker-compose"] = "dockercompose",
+}
+
+vim.g.user42 = "adantas-"
+vim.g.mail42 = "adantas-@student.42sp.org.br"
