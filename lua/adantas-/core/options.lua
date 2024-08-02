@@ -7,7 +7,7 @@ o.mouse = "a"
 o.tabstop = 4
 o.softtabstop = 4
 o.shiftwidth = 4
-o.expandtab = true
+o.expandtab = false
 
 o.colorcolumn = "80"
 o.scrolloff = 3
